@@ -4,8 +4,8 @@ require_once 'readFromConsole.php';
 
 function getSum($arr){
 	$sum = 0;
-	for($i=0; $i<count($arr); $i++)
-		$sum += $arr[$i];
+	foreach($arr as $value)
+		$sum += $value;
 	return $sum;
 }
 
