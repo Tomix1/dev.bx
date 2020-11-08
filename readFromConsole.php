@@ -26,7 +26,7 @@ function typeConversion($tmp){
 	return $arr;
 }
 
-// Функция readFromCosnole считывает строку, возвращает массив со строгой типипизацией элементов
+// Функция readFromCosnole считывает строку, возвращает массив со строгой типизацией элементов
 
 function readFromCosnole(string $input = null){
 	if(!empty($input)|| $input === "0"){
