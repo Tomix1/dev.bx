@@ -28,9 +28,9 @@ function assertEquals($checkedValue, $exactValue, $testMessage){
 Test_readFromconsole();
 echo PHP_EOL;
 
-$arr1 = readFromCosnole("true false null 1 1.3 apple 0 яблоко");
-$arr2 = array(true, false, null, 1, 1.3, "apple", 0, "яблоко");
-$arr3 = array("true", "false", "null", "1", "1.3", "apple", "0", "яблоко");
-for($i=0; $i<count($arr1); $i++){
-	assertEquals($arr1[$i], $arr2[$i], "Тест $i Результат: \"$arr3[$i]\" = ");
+$checkedValues = readFromCosnole("true false null 1 1.3 apple 0 яблоко");
+$exactValues = array(true, false, null, 1, 1.3, "apple", 0, "яблоко");
+$arrStringValues = array("true", "false", "null", "1", "1.3", "apple", "0", "яблоко");
+for($i=0; $i<count($exactValues); $i++){
+	assertEquals($checkedValues[$i], $exactValues[$i], "Тест $i Результат: \"$arrStringValues[$i]\" = ");
 }

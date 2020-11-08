@@ -7,10 +7,10 @@ function typeConversion($tmp){
 				$value = null;
 				break;
 			case "true":
-				$value = (boolean)true;
+				$value = true;
 				break;
 			case "false":
-				$value = (boolean)false;
+				$value = false;
 				break;
 			case "0":
 				$value = 0;
