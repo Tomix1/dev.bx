@@ -1,0 +1,50 @@
+Array
+(
+    [dirs] => Array
+        (
+            [a] => Array
+                (
+                    [is_readable] => 1
+                    [is_writeable] => 1
+                )
+
+            [b] => Array
+                (
+                    [is_readable] => 
+                    [is_writeable] => 1
+                )
+
+            [c] => Array
+                (
+                    [is_readable] => 1
+                    [is_writeable] => 
+                )
+
+        )
+
+    [files] => Array
+        (
+            [1.txt] => Array
+                (
+                    [is_readable] => 1
+                    [is_writeable] => 
+                    [size] => 3
+                )
+
+            [2.txt] => Array
+                (
+                    [is_readable] => 
+                    [is_writeable] => 1
+                    [size] => 0
+                )
+
+            [3.txt] => Array
+                (
+                    [is_readable] => 1
+                    [is_writeable] => 1
+                    [size] => 17
+                )
+
+        )
+
+)
