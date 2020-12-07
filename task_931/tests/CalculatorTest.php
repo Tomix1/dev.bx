@@ -29,10 +29,22 @@ class CalculatorTest extends TestCase
 		self::assertEquals(3, $calculator->divide(6, 2));
 	}
 
-	public function testPow(): void
+	public function testPow0(): void
+	{
+		$calculator = new Calculator();
+		self::assertEquals(1, $calculator->pow(3, 0));
+	}
+
+	public function testPow1(): void
 	{
 		$calculator = new Calculator();
 		self::assertEquals(81, $calculator->pow(3, 3));
+	}
+
+	public function testPow2(): void
+	{
+		$calculator = new Calculator();
+		self::assertEquals(1/81, $calculator->pow(3, -3));
 	}
 
 	public function testSqrt(): void

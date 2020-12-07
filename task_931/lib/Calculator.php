@@ -28,14 +28,28 @@ class Calculator
 		return $a / $b;
 	}
 
-	public function pow(int $a, int $n): int
+	public function pow(int $a, int $n): float
 	{
-		$res=$a;
-		for($i=0; $i<$n; $i++)
-		{
-			$res *= $a;
+		if ($n > 0){
+			$res=$a;
+			for($i=0; $i<$n; $i++)
+			{
+				$res *= $a;
+			}
+			return $res;
 		}
-		return $res;
+		elseif ($n === 0){
+			return 1;
+		}
+		else{
+			$res=$a;
+			for($i=0; $i>$n; $i--)
+			{
+				$res *= $a;
+			}
+			return 1/$res;
+		}
+
 	}
 
 	public function sqrt(int $a, float $eps): float
