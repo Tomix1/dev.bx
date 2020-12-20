@@ -1,0 +1,100 @@
+.banner{
+	min-height: 100vh;
+	min-width: 100%;
+	background: url(img/moto_background.jpg) no-repeat center;
+	background-size: cover;
+	z-index: 5;
+}
+
+.banner-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.46);
+	z-index: 10;
+}
+
+.banner-content{
+	position: relative;
+	z-index: 20;
+}
+
+h1{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 140.62%;
+}
+
+h3{
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 52px;
+	padding-bottom: 64px;
+}
+
+h4{
+	padding-top: 70px;
+}
+
+h6{
+	padding-top: 48px;
+	font-style: normal;
+	font-weight: 450;
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.space{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#text_1{
+	height: 85px;
+	width: 440px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+
+#text_2{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#text_3{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+#text_moto{
+	font-size: 24px;
+	line-height: 33px;
+	width: 370px;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.block{
+	width: 370px;
+	height: inherit;
+	min-width: 200px;
+	padding-right: 30px;
+}
+
+.social_block{
+	margin-top: 90px;
+}
+
+
